@@ -1,0 +1,1 @@
+export const FORGETPASSWORD = 'Esqueci a senha';

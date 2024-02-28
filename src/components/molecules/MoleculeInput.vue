@@ -1,6 +1,6 @@
 <template>
     <label :for="props.label" class="container-input">
-        <AtomSpan :text="props.label" />
+        <AtomSpan>{{ props.label }}</AtomSpan>
         <AtomInput :type="props.inputType" :name="props.label" />
     </label>
 </template>

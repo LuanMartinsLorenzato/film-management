@@ -1,28 +1,30 @@
 <template>
-    <span :class="props.style">{{ props.text }}</span>
+  <span :class="props.styleType">
+    <slot></slot>
+  </span>
 </template>
 
 <script setup lang="ts">
 import type { PropsAtomSpan } from '@/utils/types'
 const props = withDefaults(defineProps<PropsAtomSpan>(), {
-    style: 'input'
+  styleType: 'input'
 })
-
 </script>
 
 <style scoped>
-    .input, .text {
-        @apply w-fit h-fit;
-    }
+.input,
+.text {
+  @apply w-fit h-fit;
+}
 
-    .input {
-        @apply font-semibold
-    }
-    .input::after {
-        content: ':';
-    }
+.input {
+  @apply font-semibold;
+}
+.input::after {
+  content: ':';
+}
 
-    .text {
-        @apply font-medium
-    }
+.text {
+  @apply font-medium;
+}
 </style>

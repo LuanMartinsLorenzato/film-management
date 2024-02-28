@@ -2,8 +2,7 @@ export type StyleSpan = 'text' | 'input';
 export type InputType = 'text' | 'password';
 
 export interface PropsAtomSpan {
-    text: string;
-    style?: StyleSpan;
+    styleType?: StyleSpan;
 }
 
 export interface PropsAtomInput {
@@ -14,4 +13,8 @@ export interface PropsAtomInput {
 export interface PropsMoleculeInput {
     label: string;
     inputType: InputType;
+}
+
+export interface PropsAtomLink {
+    text: string;
 }

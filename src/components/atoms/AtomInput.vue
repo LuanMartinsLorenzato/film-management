@@ -12,6 +12,6 @@ const props = withDefaults(defineProps<PropsAtomInput>(), {
 
 <style scoped>
     .input {
-        @apply w-full h-9 bg-white/20 rounded-md px-3 font-medium;
+        @apply w-full h-9 bg-white/20 rounded-md px-3 font-medium shadow-md;
     }
 </style>
