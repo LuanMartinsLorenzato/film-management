@@ -7,24 +7,24 @@
 <script setup lang="ts">
 import type { PropsAtomSpan } from '@/utils/types'
 const props = withDefaults(defineProps<PropsAtomSpan>(), {
-  styleType: 'input'
+  styleType: 'Input'
 })
 </script>
 
 <style scoped>
-.input,
-.text {
+.Input,
+.Text {
   @apply w-fit h-fit;
 }
 
-.input {
+.Input {
   @apply font-semibold;
 }
-.input::after {
+.Input::after {
   content: ':';
 }
 
-.text {
+.Text {
   @apply font-medium;
 }
 </style>

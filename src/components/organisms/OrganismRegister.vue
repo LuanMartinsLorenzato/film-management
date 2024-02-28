@@ -1,13 +1,12 @@
 <template>
   <OrganismForm @action="submitForm">
     <template #inputs>
-      <MoleculeInput label="Login" inputType="email" />
+      <MoleculeInput label="Nome" inputType="text" />
+      <MoleculeInput label="CPF" inputType="text" mask="cpf" />
       <MoleculeInput label="Senha" inputType="password" />
-      <AtomLink>Esqueci a senha</AtomLink>
     </template>
     <template #buttons>
-      <MoleculeButton @action="registerForm">Cadastre-se</MoleculeButton>
-      <MoleculeButton>Entrar</MoleculeButton>
+      <MoleculeButton type="submit">Salvar</MoleculeButton>
     </template>
   </OrganismForm>
 </template>
@@ -16,10 +15,7 @@
 import MoleculeInput from '../molecules/MoleculeInput.vue'
 import MoleculeButton from '../molecules/MoleculeButton.vue'
 import OrganismForm from './OrganismForm.vue'
-import AtomLink from '../atoms/AtomLink.vue';
+//   const emit = defineEmits(['action']);
 
-const emit = defineEmits(['action']);
-const registerForm = () => emit('action');
 const submitForm = () => console.log('S')
-
 </script>

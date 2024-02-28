@@ -16,8 +16,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "maska": "^2.1.11",
     "pinia": "^2.1.7",
+    "v-mask": "^1.4.0-alpha",
     "vue": "^3.4.15",
+    "vue-3-mask": "^0.0.1-alpha",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {

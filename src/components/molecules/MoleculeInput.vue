@@ -1,7 +1,7 @@
 <template>
-    <label :for="props.label" class="container-input">
+    <label :for="props.label" class="ContainerInput">
         <AtomSpan>{{ props.label }}</AtomSpan>
-        <AtomInput :type="props.inputType" :name="props.label" />
+        <AtomInput :type="props.inputType" :name="props.label" :mask="props.mask"/>
     </label>
 </template>
 
@@ -14,7 +14,7 @@ const props = defineProps<PropsMoleculeInput>();
 </script>
 
 <style scoped>
-    .container-input {
+    .ContainerInput {
         @apply w-full h-fit flex gap-2 flex-col
     }
 </style>
