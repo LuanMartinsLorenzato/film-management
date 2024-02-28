@@ -1,14 +1,15 @@
 <template>
-    <a class="link" href="#" target="_blank">
-        <slot></slot>
+  <div class="link">
+    <a href="#" target="_blank">
+      <slot></slot>
     </a>
+  </div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
-    .link {
-        @apply w-full h-fit font-medium;
-    }
+.link {
+  @apply w-full font-medium;
+}
 </style>

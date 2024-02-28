@@ -3,7 +3,7 @@
     <div class="wrap-inputs">
       <MoleculeInput label="Login" inputType="text" />
       <MoleculeInput label="Senha" inputType="password" />
-      <AtomLink>{{ FORGETPASSWORD }}</AtomLink>
+      <AtomLink>Esqueci a senha</AtomLink>
     </div>
     <div class="wrap-buttons">
       <MoleculeButton>Cadastre-se</MoleculeButton>
@@ -15,7 +15,6 @@
 <script setup lang="ts">
 import MoleculeInput from '../molecules/MoleculeInput.vue'
 import AtomLink from '../atoms/AtomLink.vue'
-import { FORGETPASSWORD } from '@/utils/constants'
 import MoleculeButton from '../molecules/MoleculeButton.vue';
 </script>
 
