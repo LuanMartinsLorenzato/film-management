@@ -27,8 +27,9 @@ export interface PropsAtomLink {
 }
 
 export interface FormDataInterface {
-    [key: string]: string | number | undefined;
+    [key: string]: string | number | boolean | undefined;
     id?: number;
+    stats?: boolean;
     cep?: string;
     password?: string;
     cpf?: string;

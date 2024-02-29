@@ -4,7 +4,7 @@
 
     </div> -->
     <OrganismLogin @action="handleOrganism" v-if="!isActiveRegister"/>
-    <OrganismRegister v-else/>
+    <OrganismRegister @action="handleOrganism" v-else/>
   </div>
 </template>
 <script setup lang="ts">
