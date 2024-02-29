@@ -12,7 +12,7 @@ export interface MaskObject {
 }
 
 export interface PropsAtomInput {
-    mask?: string;
+    mask?: MaskTypes;
 }
 
 export interface PropsMoleculeInput {

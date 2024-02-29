@@ -18,18 +18,20 @@ import MoleculeButton from '../molecules/MoleculeButton.vue'
 import OrganismForm from './OrganismForm.vue'
 import type { FormDataInterface } from '@/utils/types'
 import { userServices } from '@/services/UserServices'
+import { ref } from 'vue'
 const emit = defineEmits(['action']);
-const formData: FormDataInterface = {}
+
+const formData = ref<FormDataInterface>({})
 
 const updateFormData = ([value, key]: string) => {
-  formData[key.toLocaleLowerCase()] = value
+  formData.value[key.toLocaleLowerCase()] = value
 }
 const handleRegister = () => {
   emit('action');
 }
 
 const submitForm = () => {
-  userServices.createUser(formData)
+  userServices.createUser(formData.value)
   .then(() => {console.log('Mensagem de sucesso'); handleRegister()})
   .catch(error => {console.log('Mensagem de erro' + error)});
 }
