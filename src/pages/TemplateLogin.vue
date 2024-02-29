@@ -1,9 +1,6 @@
 <template>
   <div class="TemplateLogin">
-    <!-- <div class="ContainerFlip">
-
-    </div> -->
-    <OrganismLogin @action="handleOrganism" v-if="!isActiveRegister"/>
+    <OrganismLogin @action="handleOrganism" @login="goToApp" v-if="!isActiveRegister"/>
     <OrganismRegister @action="handleOrganism" v-else/>
   </div>
 </template>
@@ -11,9 +8,11 @@
 import OrganismLogin from '@/components/organisms/OrganismLogin.vue';
 import OrganismRegister from '@/components/organisms/OrganismRegister.vue';
 import { ref } from 'vue';
+import router from '../router/index'
 
 const isActiveRegister = ref<boolean>(false);
 
+const goToApp = () => router.replace('/home');
 const handleOrganism = () => isActiveRegister.value = !isActiveRegister.value;
 
 </script>
