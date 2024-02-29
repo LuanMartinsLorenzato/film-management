@@ -1,13 +1,13 @@
 <template>
   <OrganismForm @action="submitForm">
     <template #inputs>
-      <MoleculeInput label="Login" inputType="email" />
-      <MoleculeInput label="Senha" inputType="password" />
-      <AtomLink>Esqueci a senha</AtomLink>
+      <MoleculeInput label="Name" inputType="text" />
+      <MoleculeInput label="Password" inputType="password"  />
+      <AtomLink>Forgot password</AtomLink>
     </template>
     <template #buttons>
-      <MoleculeButton @action="registerForm">Cadastre-se</MoleculeButton>
-      <MoleculeButton>Entrar</MoleculeButton>
+      <MoleculeButton @action="registerForm">Sign Up</MoleculeButton>
+      <MoleculeButton>Sign In</MoleculeButton>
     </template>
   </OrganismForm>
 </template>

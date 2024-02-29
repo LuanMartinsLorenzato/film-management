@@ -1,7 +1,7 @@
-import type { MaskObject } from "./types";
+import type { MaskObject } from './types'
 
 export const MASKS: MaskObject = {
-    cpf: '###.###.###-##',
-    cep: '#####-###',
-    phone: '(##) #####-####',
+  cpf: '###.###.###-##',
+  cep: '#####-###',
+  phone: '(##) #####-####'
 }

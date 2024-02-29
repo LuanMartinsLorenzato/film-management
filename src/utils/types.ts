@@ -12,17 +12,32 @@ export interface MaskObject {
 }
 
 export interface PropsAtomInput {
-    name: string;
-    type: InputType;
     mask?: string;
 }
 
 export interface PropsMoleculeInput {
     label: string;
     inputType: InputType;
+    required?: boolean;
     mask?: MaskTypes;
 }
 
 export interface PropsAtomLink {
     text: string;
+}
+
+export interface FormDataInterface {
+    [key: string]: string | number | undefined;
+    id?: number;
+    cep?: string;
+    password?: string;
+    cpf?: string;
+    phone?: string;
+    name?: string;
+    lastName?: string;
+    email?: string;
+    address?: string;
+    city?: string;
+    neighborhood?: string;
+    uf?: string;
 }
